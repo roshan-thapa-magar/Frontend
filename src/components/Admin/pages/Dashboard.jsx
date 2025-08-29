@@ -54,7 +54,7 @@ export default function Dashboard({ userRole, userCategory }) {
       : t('guest');
 
   return (
-    <div className="overflow-x-auto h-[95vh] space-y-4 p-3">
+    <div className="overflow-x-auto h-[95vh] space-y-4 p-3 hide-scrollbar">
       {/* Welcome Header */}
       <div className="flex flex-col md:flex-row justify-between items-start md:items-center p-6 rounded-md bg-gray-800 gap-4">
         <div>
