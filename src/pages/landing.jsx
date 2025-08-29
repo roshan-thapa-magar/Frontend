@@ -31,7 +31,7 @@ export default function Landing() {
   const handleRegisterClick = () => navigate('/register');
 
   return (
-    <div className='min-h-screen md:px-16 bg-gray-950'>
+    <div className='min-h-screen md:px-16 bg-gray-950 '>
       {/* Header */}
       <header className='fixed top-0 left-0 right-0 bg-gray-900 z-50 p-4 shadow-md flex justify-between items-center'>
         <h1 className='text-lg md:text-xl font-extrabold'>
@@ -46,8 +46,8 @@ export default function Landing() {
                         transform ${menu ? 'translate-x-0' : 'translate-x-full'} 
                         transition-transform duration-300 ease-in-out z-50`}
           >
-            <div className='flex justify-between items-center p-4'>
-              <h1 className='underline cursor-pointer' onClick={handleRegisterClick}>Register</h1>
+            <div className='flex justify-between items-center p-4 border-b border-gray-600'>
+              <h1 className=''>Dine X</h1>
               <LuUtensilsCrossed size={22} onClick={openMenu} className='cursor-pointer' />
             </div>
             <ul className='text-center mt-6'>
@@ -56,8 +56,8 @@ export default function Landing() {
               <li className='p-3 hover:bg-gray-700' onClick={() => handleScrollTo('feature')}>Feature</li>
               <li className='p-3 hover:bg-gray-700' onClick={() => handleScrollTo('services')}>Services</li>
               <li className='p-3 hover:bg-gray-700' onClick={() => handleScrollTo('contact')}>Contact</li>
-              <li className='p-3 border-t' onClick={handleLoginClick}>Login</li>
-              <li className='p-3 border-b' onClick={handleRegisterClick}>Sign up</li>
+              <li className='p-3 border-t border-gray-600' onClick={handleLoginClick}>Login</li>
+              <li className='p-3 border-b border-gray-600' onClick={handleRegisterClick}>Sign up</li>
             </ul>
           </nav>
         </div>
@@ -75,7 +75,7 @@ export default function Landing() {
       </header>
 
       {/* Content */}
-      <main className='pt-24 p-3'>
+      <main className='pt-28 p-3'>
         <section id='home'><Home /></section>
         {/* <section id='about'><About /></section> */}
         <section id='feature'><Feature /></section>

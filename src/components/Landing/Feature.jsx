@@ -3,7 +3,7 @@ import { FaQrcode, FaMobileAlt, FaUtensils, FaShoppingCart, FaMoneyBillAlt, FaUs
 export default function Feature() {
   return (
     <div>
-      <h1 className='text-center text-4xl text-orange-500 font-semibold mb-12'>Key Features</h1>
+      <h1 className='text-center text-4xl text-orange-500 font-semibold  my-12'>Key Features</h1>
       <div className='grid grid-cols-1 md:grid-cols-3 gap-6'>
         
         {/* QR Code Ordering Feature */}

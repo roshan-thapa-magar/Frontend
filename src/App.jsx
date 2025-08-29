@@ -18,7 +18,7 @@ import ResetPassword from './pages/resetPassword';
 import RequestResetPassword from './pages/requestResetPassword';
 export default function App() {
   return (
-    <div className='bg-gray-950 text-slate-300 h-screen'>
+    <div className='bg-gray-950 text-slate-300 h-screen '>
       <CustomerContextProvider> {/* Wrap everything with the CustomerContextProvider */}
         <BrowserRouter>
           <Routes>
