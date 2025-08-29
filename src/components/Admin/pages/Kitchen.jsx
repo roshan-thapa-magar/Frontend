@@ -1,7 +1,7 @@
 import { useState, useEffect, useContext } from 'react';
-import Pending from "./kitchen/Pending";
-import Preparing from "./kitchen/Preparing";
-import Complete from "./kitchen/Complete";
+import Pending from "./kitchen/pending";
+import Preparing from "./kitchen/preparing";
+import Complete from "./kitchen/complete";
 import axios from "axios";
 import { io } from "socket.io-client";
 import { LoginContext } from "../../ContextProvider/Context";
