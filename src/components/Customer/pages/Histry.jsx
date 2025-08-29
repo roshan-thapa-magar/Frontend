@@ -99,8 +99,7 @@ export default function Histry() {
       return;
     }
   
-    // Write the HTML content to the new window
-    // ${userData.image ? `<img src="${API_URL}/${userData.image}" class="logo" />` : ''}
+
 
     newWindow.document.write(`
       <html>
@@ -235,7 +234,7 @@ export default function Histry() {
             return `
               <div class="invoice">
                 <div class="header">
-                  ${userData.image ? `<img src="${API_URL}/${userData.image}" class="logo" />` : ''}
+                  ${userData.image ? `<img src={userData.image} class="logo" />` : ''}
                   <h3>${userData.restaurant || 'Restaurant Name'}</h3>
                   <p>${userData.address || ''}</p>
                   <p>${userData.phone || ''} | ${userData.email || ''}</p>

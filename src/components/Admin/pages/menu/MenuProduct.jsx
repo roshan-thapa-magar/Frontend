@@ -94,7 +94,7 @@ export default function Items() {
         discount: detail.discount || "",
         status: detail.status || "Active",
       });
-      setSelectedImage(detail.image ? `${API_URL}/${detail.image}` : image);
+      setSelectedImage(detail.image ? `${detail.image}` : image);
     } else {
       setSelectedDetail(null);
       setFormData({
@@ -242,7 +242,7 @@ export default function Items() {
                   </td>
                   <td className="px-6 py-4 text-center whitespace-nowrap text-sm">
                     <img
-                      src={`${API_URL}/${detail.image}`}
+                      src={detail.image}
                       alt="Product"
                       className="w-8 h-8 rounded-md object-cover mx-auto"
                     />

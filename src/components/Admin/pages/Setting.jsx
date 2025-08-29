@@ -68,7 +68,7 @@ export default function Setting({ userRole }) {
       <div className="flex flex-col md:flex-row justify-between md:items-center space-y-4">
         <div className="flex items-center space-x-4">
           <img
-            src={userData?.image ? `${API_URL}/${userData.image}` : img}
+            src={userData?.image ? userData.image : img}
             alt={t('profile_picture')}
             className="w-12 h-12 object-cover rounded-full border cursor-pointer"
           />

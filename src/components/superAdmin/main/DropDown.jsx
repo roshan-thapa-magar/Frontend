@@ -39,7 +39,7 @@ export default function DropDown({profileClick,handlePageChange,userData}) {
           <div className="flex justify-between items-center gap-8">
             <div className='flex justify-start gap-3 items-center'>
             {userData && userData.image ? (
-              <img src={`${API_URL}/${userData.image}`} alt="" className='w-6 h-6 rounded-full border border-gray-400 object-cover'/>
+              <img src={userData.image} alt="" className='w-6 h-6 rounded-full border border-gray-400 object-cover'/>
               ) : (
                 <h1 className="w-6 h-6 flex justify-center items-center rounded-full object-cover bg-blue-600 text-white font-bold border border-gray-400">
                   {userData?.name?.[0]}

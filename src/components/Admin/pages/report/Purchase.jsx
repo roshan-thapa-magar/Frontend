@@ -61,7 +61,7 @@ export default function Purchase() {
         paymentStatus: purchase.paymentStatus,
         dateOfPurchase: purchase.dateOfPurchase.slice(0, 10)
       });
-      setSelectedImage(`${API_URL}/${purchase.image}`);
+      setSelectedImage(`${purchase.image}`);
       setSelectedPurchase(purchase);
     } else {
       setFormData({
@@ -222,7 +222,7 @@ export default function Purchase() {
                   <td className="px-6 py-4 text-center text-sm">{purchase.totalPrice}</td>
                   <td className="px-6 py-4 text-center text-sm">
                     <img
-                      src={`${API_URL}/${purchase.image}` || image}
+                      src={`${purchase.image}` || image}
                       alt="Purchase"
                       className="w-8 h-8 rounded-md object-cover mx-auto"
                     />

@@ -41,7 +41,7 @@ export default function Header({toggleSidebar,profileClick,profile,title,handleP
         </div>
         <div onClick={profileClick} className='cursor-pointer'>
             {userData && userData.image ? (
-              <img src={`${API_URL}/${userData.image}`} alt="" className='w-6 h-6 rounded-full border  border:bg-gray-400 object-cover'/>
+              <img src={userData.image} alt="" className='w-6 h-6 rounded-full border  border:bg-gray-400 object-cover'/>
               ) : (
                 <h1 className="w-6 h-6 flex justify-center items-center rounded-full object-cover bg-blue-600 text-white font-bold border border-gray-400">
                   {userData?.name?.[0]}

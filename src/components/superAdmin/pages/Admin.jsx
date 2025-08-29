@@ -80,7 +80,7 @@ export default function Admin() {
         trialStartDate: customer.trialStartDate ? new Date(customer.trialStartDate) : new Date(),
         trialEndDate: customer.trialEndDate ? new Date(customer.trialEndDate) : new Date(Date.now() + 15 * 24 * 60 * 60 * 1000),
       });
-      setSelectedImage(customer.image ? `${API_URL}/${customer.image}` : img);
+      setSelectedImage(customer.image ? `${customer.image}` : img);
     } else {
       setCurrentCustomerId(null);
       setInpVal({
@@ -264,7 +264,7 @@ export default function Admin() {
                     <td className="px-6 py-4 items-center text-center">{customer.address}</td>
                     <td className="px-6 py-4 items-center text-center">{customer.restaurant}</td>
                     <td className="px-6 py-4 items-center text-center">
-                      <img src={customer.image ? `${API_URL}/${customer.image}` : img} className="w-8 h-8 border border-gray-600" alt="Customer" />
+                      <img src={customer.image ? `${customer.image}` : img} className="w-8 h-8 border border-gray-600" alt="Customer" />
                     </td>
                     
                     <td className="px-6 py-4 items-center text-center">

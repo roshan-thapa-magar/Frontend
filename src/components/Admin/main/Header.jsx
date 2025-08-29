@@ -271,7 +271,7 @@ export default function Header({ toggleSidebar, profile, setProfile, title, setS
           <div onClick={handleProfileClick} className='cursor-pointer'>
             {userData?.image ? (
               <img
-                src={`${API_URL}/${userData.image}`}
+                src={userData.image}
                 alt=""
                 className='w-6 h-6 rounded-full border border-gray-400 object-cover'
               />

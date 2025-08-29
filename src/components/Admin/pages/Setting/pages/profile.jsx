@@ -128,7 +128,7 @@ export default function Profile({userRole}) {
           <label>{t('profilePicture')}</label>
           <div className="relative">
             <img
-               src={selectedImage || userData?.image ? `${API_URL}/${userData?.image}` : img}
+               src={selectedImage || userData?.image ? `${userData?.image}` : img}
               alt="Profile"
               className="w-32 h-32 rounded-full mx-auto object-cover"
             />

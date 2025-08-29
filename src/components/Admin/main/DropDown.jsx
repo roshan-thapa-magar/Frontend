@@ -42,7 +42,7 @@ export default function DropDown({ profileClick, setSidebar, userData }) {
           <div className="flex justify-start gap-3 items-center">
             {userData && userData.image ? (
               <img
-                src={`${API_URL}/${userData.image}`}
+                src={userData.image}
                 alt=""
                 className="w-6 h-6 rounded-full bg-gray-800 object-cover border border-gray-400 cursor-pointer"
               />

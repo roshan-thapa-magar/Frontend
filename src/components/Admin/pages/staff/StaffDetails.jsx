@@ -62,7 +62,7 @@ export default function StaffDetails() {
         salary: detail.salary,
         status: detail.status || 'Active'
       });
-      setSelectedImage(`${API_URL}/${detail.image}`);
+      setSelectedImage(`${detail.image}`);
       setSelectedDetail(detail);
     } else {
       setFormData({

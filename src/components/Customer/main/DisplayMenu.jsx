@@ -177,7 +177,7 @@ export default function DisplayMenu({ selectedCategory, searchQuery }) {
               <div className="rounded-md flex flex-col">
                 <div className="relative w-full h-30">
                   <img
-                    src={`${API_URL}/${product.image || img}`}
+                    src={`${product.image || img}`}
                     className="w-full h-[12vh] rounded-t-md object-cover"
                     alt={product.name}
                   />
@@ -227,7 +227,7 @@ export default function DisplayMenu({ selectedCategory, searchQuery }) {
               <h1 className="text-center text-xl">{selectedFood.name}</h1>
             </div>
             <img
-              src={`${API_URL}/${selectedFood.image || img}`}
+              src={`${selectedFood.image || img}`}
               className="w-full h-48 rounded-md object-cover"
               alt={selectedFood.name}
             />

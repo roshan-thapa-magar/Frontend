@@ -140,7 +140,7 @@ export default function Info() {
         {data?.image && (
           <div className="w-full flex justify-center">
             <img
-              src={`${API_URL}/${data.image}`}
+              src={data.image}
               alt="Restaurant Logo"
               className="w-32 h-32 object-cover rounded-full border border-gray-700"
             />

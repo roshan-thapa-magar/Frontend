@@ -65,7 +65,7 @@ export default function Profile({handlePageChange}) {
         {/* Profile Picture and Name */}
         <div className="flex md:flex-col space-x-2 md:space-x-0 items-center md:justify-center">
           <img
-            src={userData?.image ? `${API_URL}/${userData.image}` : img}
+            src={userData?.image ? `${userData.image}` : img}
             alt="Profile"
             className="w-16 h-16 md:w-36 md:h-36 lg:w-64 lg:h-64 rounded-full bg-gray-800 object-cover"
           />
