@@ -35,7 +35,7 @@ export default function Landing() {
       {/* Header */}
       <header className='fixed top-0 left-0 right-0 bg-gray-900 z-50 p-4 shadow-md flex justify-between items-center'>
         <h1 className='text-lg md:text-xl font-extrabold'>
-          FOOD <span className='text-orange-600'>ME</span>
+        Dine <span className='text-orange-600'>X</span>
         </h1>
 
         {/* Mobile Nav */}

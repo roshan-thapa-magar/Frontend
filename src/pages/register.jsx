@@ -105,7 +105,7 @@ export default function Register() {
         {/* Image Section */}
         <div className='relative hidden md:flex justify-center items-center'>
           <img src={img} alt="Register Illustration" className='h-[80vh] object-cover rounded-l-lg' />
-          <h2 className='absolute top-36 right-16 text-orange-500 font-extrabold text-xl'>FOOD ME</h2>
+          <h2 className='absolute top-36 right-16 text-orange-500 font-extrabold text-xl'>DineX</h2>
         </div>
 
         {/* Form Section */}

@@ -13,7 +13,7 @@ export default function Sidebar({setSidebar,handlePageChange, currentPage}) {
   return (
     <div>
       <div className='flex justify-between md:justify-start p-3 shadow-md'>
-        <h1>Food Me</h1>
+        <h1>DineX</h1>
         <RxCross2 size={20} onClick={()=>setSidebar(false)} className='md:hidden cursor-pointer'/>
       </div>
       <ul>

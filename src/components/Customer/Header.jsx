@@ -127,7 +127,7 @@ export default function Header() {
   return (
     <div className="relative flex justify-between items-center p-2">
       <div>
-        <h1 className="text-md font-bold">FOOD ME</h1>
+        <h1 className="text-md font-bold">DineX</h1>
       </div>
 
       <div className="flex items-center space-x-2">

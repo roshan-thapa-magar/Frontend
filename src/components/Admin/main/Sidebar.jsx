@@ -37,7 +37,7 @@ export default function Sidebar({ setSidebar, userRole, userCategory }) {
   return (
     <div>
       <div className="flex justify-between lg:justify-start p-3 shadow-md border-b border-gray-600">
-        <h1>FOOD ME</h1>
+        <h1>DineX</h1>
         <RxCross2 size={20} onClick={() => setSidebar(false)} className="lg:hidden cursor-pointer" />
       </div>
 
