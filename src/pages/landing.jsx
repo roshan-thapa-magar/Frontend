@@ -6,7 +6,7 @@ import '../App.css'
 
 // Landing pages components
 import Home from '../components/Landing/Home';
-import About from '../components/Landing/About';
+// import About from '../components/Landing/About';
 import Feature from '../components/Landing/Feature';
 import Services from '../components/Landing/Services';
 import Contact from '../components/Landing/Contact';
@@ -52,7 +52,7 @@ export default function Landing() {
             </div>
             <ul className='text-center mt-6'>
               <li className='p-3 hover:bg-gray-700' onClick={() => handleScrollTo('home')}>Home</li>
-              <li className='p-3 hover:bg-gray-700' onClick={() => handleScrollTo('about')}>About</li>
+              {/* <li className='p-3 hover:bg-gray-700' onClick={() => handleScrollTo('about')}>About</li> */}
               <li className='p-3 hover:bg-gray-700' onClick={() => handleScrollTo('feature')}>Feature</li>
               <li className='p-3 hover:bg-gray-700' onClick={() => handleScrollTo('services')}>Services</li>
               <li className='p-3 hover:bg-gray-700' onClick={() => handleScrollTo('contact')}>Contact</li>
@@ -65,7 +65,7 @@ export default function Landing() {
         {/* Desktop Nav */}
         <ul className='hidden md:flex items-center space-x-6 text-sm font-medium'>
           <li className='cursor-pointer' onClick={() => handleScrollTo('home')}>Home</li>
-          <li className='cursor-pointer' onClick={() => handleScrollTo('about')}>About</li>
+          {/* <li className='cursor-pointer' onClick={() => handleScrollTo('about')}>About</li> */}
           <li className='cursor-pointer' onClick={() => handleScrollTo('feature')}>Feature</li>
           <li className='cursor-pointer' onClick={() => handleScrollTo('services')}>Services</li>
           <li className='cursor-pointer' onClick={() => handleScrollTo('contact')}>Contact</li>
@@ -77,7 +77,7 @@ export default function Landing() {
       {/* Content */}
       <main className='pt-24 p-3'>
         <section id='home'><Home /></section>
-        <section id='about'><About /></section>
+        {/* <section id='about'><About /></section> */}
         <section id='feature'><Feature /></section>
         <section id='services'><Services /></section>
         <section id='contact'><Contact /></section>
