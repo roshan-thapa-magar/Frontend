@@ -198,14 +198,14 @@ export default function StaffDetails() {
             {details.filter(detail => detail.name.toLowerCase().includes(searchTerm.toLowerCase())).length > 0 ? (
               details.filter(detail => detail.name.toLowerCase().includes(searchTerm.toLowerCase())).map((detail, index) => (
                 <tr key={detail._id} className="text-slate-200">
-                  <td className="px-6 py-4 text-center whitespace-nowrap text-sm">{index + 1}</td>
-                  <td className="px-6 py-4 text-center whitespace-nowrap text-sm">{detail.name}</td>
-                  <td className="px-6 py-4 text-center whitespace-nowrap text-sm">{detail.email}</td>
-                  <td className="px-6 py-4 text-center whitespace-nowrap text-sm">{detail.category}</td>
-                  <td className="px-6 py-4 text-center whitespace-nowrap text-sm">{detail.address}</td>
-                  <td className="px-6 py-4 text-center whitespace-nowrap text-sm">{detail.phone}</td>
-                  <td className="px-6 py-4 text-center whitespace-nowrap text-sm">{detail.salary}</td>
-                  <td className="px-6 py-4 text-center whitespace-nowrap text-sm">{detail.status}</td>
+                  <td className="px-6 py-4 text-center whitespace-nowrap text-sm truncate-text ">{index + 1}</td>
+                  <td className="px-6 py-4 text-center whitespace-nowrap text-sm truncate-text ">{detail.name}</td>
+                  <td className="px-6 py-4 text-center whitespace-nowrap text-sm truncate-text ">{detail.email}</td>
+                  <td className="px-6 py-4 text-center whitespace-nowrap text-sm truncate-text ">{detail.category}</td>
+                  <td className="px-6 py-4 text-center whitespace-nowrap text-sm truncate-text ">{detail.address}</td>
+                  <td className="px-6 py-4 text-center whitespace-nowrap text-sm truncate-text ">{detail.phone}</td>
+                  <td className="px-6 py-4 text-center whitespace-nowrap text-sm truncate-text ">{detail.salary}</td>
+                  <td className="px-6 py-4 text-center whitespace-nowrap text-sm truncate-text ">{detail.status}</td>
                   <td className="px-6 py-4 text-center whitespace-nowrap text-sm flex justify-center gap-2">
                     <MdModeEdit
                       className="text-2xl text-green-700 cursor-pointer"
